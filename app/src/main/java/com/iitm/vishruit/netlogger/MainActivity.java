@@ -55,15 +55,12 @@ public class MainActivity extends AppCompatActivity {
 
         // show location button click event
         btnShowLocation.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View arg0) {
                 // create object of custom class GPSTracker
                 gps = new GPSTracker(MainActivity.this);
-
                 // check if GPS enabled
                 if (gps.canGetLocation()) {
-
                     double latitude = gps.getLatitude();
                     double longitude = gps.getLongitude();
                     String type = getNetworkClass(getApplicationContext());
@@ -73,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
                             "\nType: " + ck.getNetworkType(MainActivity.this), // type,
                             Toast.LENGTH_LONG).show();
                 } else {
-
                     // Ask user to enable GPS/network in settings by throwing pop-up
                     gps.showSettingsAlert();
                 }
