@@ -23,6 +23,8 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     myPhoneStateListener psListener;
     Button btnShowLocation;
     GPSTracker gps;
+    String filename = "logFile";
+    FileOutputStream outputStream;
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -42,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        File file = new File(this.getFilesDir(), filename);
+
         psListener = new myPhoneStateListener();
         telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         telephonyManager.listen(psListener, PhoneStateListener.LISTEN_SIGNAL_STRENGTHS); // Listen to changes in signal strength
@@ -74,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
@@ -159,7 +168,6 @@ public class MainActivity extends AppCompatActivity {
     public class myPhoneStateListener extends PhoneStateListener {
         public int signalStrengthValue;
 
-
         public void onSignalStrengthsChanged(SignalStrength signalStrength) {
             super.onSignalStrengthsChanged(signalStrength);
             if (signalStrength.isGsm()) {
@@ -173,6 +181,17 @@ public class MainActivity extends AppCompatActivity {
             Log.i(TAG, "Strength = " + signalStrengthValue); // log the strength value for easier debugging
             TextView txt1 = (TextView) findViewById(R.id.textView1);
             txt1.setText("Strength = " + signalStrengthValue);
+
+            String string = ""; // TODO
+
+            try {
+                outputStream = openFileOutput(filename, Context.MODE_PRIVATE);
+                outputStream.write(string.getBytes());
+                outputStream.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
         }
     }
 
