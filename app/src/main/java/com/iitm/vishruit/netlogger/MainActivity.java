@@ -19,6 +19,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -48,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Firebase.setAndroidContext(this);
         File file = new File(this.getFilesDir(), filename);
 
         psListener = new myPhoneStateListener();
@@ -65,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
         btnShowLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
+
+                Firebase ref = new Firebase(Config.FIREBASE_URL);
+
                 // create object of custom class GPSTracker
                 gps = new GPSTracker(MainActivity.this);
                 // check if GPS enabled
@@ -80,6 +88,36 @@ public class MainActivity extends AppCompatActivity {
                     // Ask user to enable GPS/network in settings by throwing pop-up
                     gps.showSettingsAlert();
                 }
+
+//                ref.child("Person").setValue(person);
+                ref.setValue("qwd");
+
+                //Value event listener for realtime data update
+                ref.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot snapshot) {
+                        for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+                            //Getting the data from snapshot
+//                            Person person = postSnapshot.getValue(Person.class);
+
+                            //Adding it to a string
+                            String string = "Name: "+"qazwsx"+"\nAddress: "+"qazwsxedc"+"\n\n";
+
+                            //Displaying it on textview
+//                            textViewPersons.setText(string);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(FirebaseError firebaseError) {
+                        System.out.println("The read failed: " + firebaseError.getMessage());
+                    }
+                });
+
+
+
+
+
             }
         });
 
