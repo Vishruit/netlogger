@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vishruit\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.4.0\558e074f136fee609b8758480ecd00e286595137\firebase-client-jvm-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="558e074f136fee609b8758480ecd00e286595137">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.4.0_1f0a51ee6ea8243c24d3c5a4b571e38fc0c65867\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vishruit\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.12\6ec0bbd3e161a73ed672284b587fd32309a86d7a\tubesock-0.0.12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="6ec0bbd3e161a73ed672284b587fd32309a86d7a">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\tubesock-0.0.12_d473f98a3a3a6e1cf965acb758c61a7c6eb2ea71\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vishruit\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.2.2_bfb3422358bcc8355eae5fe53d75d4da23f9b37a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\netlogger\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0_8dfa2dc209d8edfc68bd430ab38655428b314699\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\netlogger\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1000eb701f810cd384abad61a3f5550c67c2a7fd">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1583299ff095ce5607f342e729d5f9568c32835e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Vishruit\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0_de2bd546a8c5a34a7d6d13f1749cd623e014514a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\netlogger\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.0.0_e15bcc4d468c59743d914c47b521ce040fd41170\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vishruit\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.2.2_0335f90ef81e67ed61facd04d59794395ff2fa52\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\netlogger\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.1.0_ef2fbe94c8ef972f0aad6031b68f95aa7d1e0b06\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\netlogger\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0_f74ed90aaadb885eaa7570ab300e3504a1850011\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vishruit\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-annotations-2.2.2_fd47ea0f17b74482615948d952b8bbdc6c6f87e0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\netlogger\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="675ac83d0ef24a1370c84951a13b58607c8fd2f1">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0362d041a97fae98c09729272b76ab42a4702be7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\netlogger\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_f25620f88044d92117bd05264862ce3e5f73d81b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\netlogger\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0_08fa66394bc47e363d463befd89329393ad31201\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\netlogger\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.1.0_d83a364faed820b207f50e7a772c3049357096fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vishruit\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.4.0\f00bc767918ad9c89e5c13e25706d033a58e13c2\firebase-client-android-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f00bc767918ad9c89e5c13e25706d033a58e13c2">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-android-2.4.0_b9e48d65124b800b75b0bee48c76d8d6a8f3e2ea\classes.dex" />
+    </item>
+
+</items>
