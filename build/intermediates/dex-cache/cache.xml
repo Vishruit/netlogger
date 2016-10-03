@@ -3,12 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Vishruit\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.4.0\558e074f136fee609b8758480ecd00e286595137\firebase-client-jvm-2.4.0.jar"
+        jar="C:\Users\Vishruit\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.5.1\11ea7eeda00b1bb92accba250ee7c8740bdebc19\firebase-client-jvm-2.5.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="558e074f136fee609b8758480ecd00e286595137">
-        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.4.0_1f0a51ee6ea8243c24d3c5a4b571e38fc0c65867\classes.dex" />
+        sha1="11ea7eeda00b1bb92accba250ee7c8740bdebc19">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.5.1_f2aa0bd95790c4c2e10d0ed5e50d322b5c944e8a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -102,6 +102,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Vishruit\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.5.1\8c94ae916de454be497782505e3e6fd437a28b95\firebase-client-android-2.5.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8c94ae916de454be497782505e3e6fd437a28b95">
+        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-android-2.5.1_e9f051215f6e17d31dac689f7c3d0a6f542c7345\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="E:\GitHub\netlogger\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
@@ -135,15 +144,6 @@
         revision="24.0.0"
         sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
         <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.1.0_d83a364faed820b207f50e7a772c3049357096fd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Vishruit\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.4.0\f00bc767918ad9c89e5c13e25706d033a58e13c2\firebase-client-android-2.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="f00bc767918ad9c89e5c13e25706d033a58e13c2">
-        <dex dex="E:\GitHub\netlogger\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-android-2.4.0_b9e48d65124b800b75b0bee48c76d8d6a8f3e2ea\classes.dex" />
     </item>
 
 </items>

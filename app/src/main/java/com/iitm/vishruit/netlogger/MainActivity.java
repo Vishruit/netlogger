@@ -2,6 +2,7 @@ package com.iitm.vishruit.netlogger;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Firebase.setAndroidContext(this);
+
         File file = new File(this.getFilesDir(), filename);
 
         psListener = new myPhoneStateListener();
@@ -65,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
         String carrierName = telephonyManager.getNetworkOperatorName();
         txt2.setText("User ID = " + imei);
         txt1.setText("Carrier is " + carrierName);
+
+//        // Automatically turning ON gps
+//        Intent intent=new Intent("android.location.GPS_ENABLED_CHANGE");
+//        intent.putExtra("enabled", true);
+//        sendBroadcast(intent);
 
         // show location button click event
         btnShowLocation.setOnClickListener(new View.OnClickListener() {
@@ -80,39 +87,42 @@ public class MainActivity extends AppCompatActivity {
                     double latitude = gps.getLatitude();
                     double longitude = gps.getLongitude();
                     Connectivity ck = new Connectivity();
-                    Toast.makeText(getApplicationContext(), "Your Location is - \nLat: " + latitude +
+                    String loc = "Your Location is - \nLat: " + latitude +
                             "\nLong: " + longitude +
-                            "\nType: " + ck.getNetworkType(MainActivity.this),
+                            "\nType: " + ck.getNetworkType(MainActivity.this);
+                    Toast.makeText(getApplicationContext(), loc,
                             Toast.LENGTH_LONG).show();
+                    ref.push().child("Init").setValue(loc);
                 } else {
                     // Ask user to enable GPS/network in settings by throwing pop-up
                     gps.showSettingsAlert();
                 }
 
-//                ref.child("Person").setValue(person);
-                ref.setValue("qwd");
+////                ref.child("Person").setValue(person);
+//                ref.setValue("qwd");
+//
+//                //Value event listener for realtime data update
+//                ref.addValueEventListener(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(DataSnapshot snapshot) {
+//                        for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+//                            //Getting the data from snapshot
+////                            Person person = postSnapshot.getValue(Person.class);
+//
+//                            //Adding it to a string
+//                            String string = "Name: "+"qazwsx"+"\nAddress: "+"qazwsxedc"+"\n\n";
+//
+//                            //Displaying it on textview
+////                            textViewPersons.setText(string);
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(FirebaseError firebaseError) {
+//                        System.out.println("The read failed: " + firebaseError.getMessage());
+//                    }
+//                });
 
-                //Value event listener for realtime data update
-                ref.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot snapshot) {
-                        for (DataSnapshot postSnapshot : snapshot.getChildren()) {
-                            //Getting the data from snapshot
-//                            Person person = postSnapshot.getValue(Person.class);
-
-                            //Adding it to a string
-                            String string = "Name: "+"qazwsx"+"\nAddress: "+"qazwsxedc"+"\n\n";
-
-                            //Displaying it on textview
-//                            textViewPersons.setText(string);
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(FirebaseError firebaseError) {
-                        System.out.println("The read failed: " + firebaseError.getMessage());
-                    }
-                });
 
 
 
